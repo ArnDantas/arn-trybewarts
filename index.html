@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Trybewarts</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header class='header'>
+    <img class='trybewarts-header-logo' src='/images/trybewarts-header-logo.svg' alt='logo'>
+    <h1 id='trybewarts-header-title'>Trybewarts</h1>
+    <form class='trybewarts-login'>
+
+      <section id='login'>
+        <label for='email'></label>
+        <input id='user' type='text' name='email' placeholder='Email'>
+
+        <label for='password'></label>
+        <input id='password' type='password' name='password' placeholder='Senha'>
+
+        <button type="submit" id='submitLogin'>Entrar</button>
+
+      </section>
+
+    </form>
+
+  </header>
+  <main>
+
+    <fieldset>
+
+      <form id='evaluation-form'>
+        <fieldset id="name">
+
+          <input type='name' id='input-name' placeholder='Nome'>
+
+          <input type='name' id='input-lastname' placeholder='Sobrenome'>
+        </fieldset>
+        <fieldset>
+          <input type='name' id='input-email' placeholder='Email'>
+          <label for="select">Casas:</label>
+          <select name='select' id='house'>
+            <option value='Gitnória' id='gitnoria-house'>Gitnória</option>
+            <option value='Reactpuff' id='reactpuff-house'>Reactpuff</option>
+            <option value='Corvinode' id='corvinode-house'>Corvinode</option>
+            <option value='Pytherina' id='pytherina-house'>Pytherina</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for='family'>
+            <p id='label-family'>Qual sua família?</p>
+            <br>
+            <p>Frontend</p>
+            <input type="radio" name="family" value="Frontend">
+            <p>Backend</p>
+            <input type="radio" name="family" value="Backend">
+            <p>FullStack</p>
+            <input type="radio" name="family" value="FullStack">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="subject" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <br>
+          <input type="checkbox" name="subject" class="subject" value="HoFs">HoFs
+          <input type="checkbox" name="subject" class="subject" value="Jest">Jest
+          <input type="checkbox" name="subject" class="subject" value="Promises">Promises
+          <input type="checkbox" name="subject" class="subject" value="React">React
+          <input type="checkbox" name="subject" class="subject" value="SQL">SQL
+          <input type="checkbox" name="subject" class="subject" value="Python">Python
+        </fieldset>
+        <br>
+        <fieldset>
+          <label for='rate' id='label-rate'>Como você avalia a Trybewarts?</label>
+          <input type='radio' name='rate' value="1">1
+          <input type='radio' name='rate' value="2">2
+          <input type='radio' name='rate' value="3">3
+          <input type='radio' name='rate' value="4">4
+          <input type='radio' name='rate' value="5">5
+          <input type='radio' name='rate' value="6">6
+          <input type='radio' name='rate' value="7">7
+          <input type='radio' name='rate' value="8">8
+          <input type='radio' name='rate' value="9">9
+          <input type='radio' name='rate' value="10">10
+        </fieldset>
+
+        <fieldset id="contador">
+          <label class='textarea' for=''>Deixe seu comentário:</label>
+          <br>
+          <textarea name='' id='textarea' cols='40' rows='10' maxlength='500'></textarea>
+          <p id='counter'>500</p>
+        </fieldset>
+
+        <fieldset>
+          <label id='label-infos' for=''>Você concorda com o uso das informações acima?</label>
+          <input id='agreement' type='checkbox'>
+        </fieldset>
+
+        <fieldset>
+          <button id='submit-btn' disabled type='submit'>Enviar</button>
+        </fieldset>
+
+      </form>
+      <form id="form-data">
+        <p id="nome"></p>
+        <p id="email"></p>
+        <p id="casa"></p>
+        <p id="familia"></p>
+        <p id="materias"></p>
+        <p id="avaliacao"></p>
+        <p id="observacoes"></p>
+
+      </form>
+
+    </fieldset>
+
+    <section>
+      <img id='trybewarts-forms-logo' src='images/trybewarts-colored.svg' alt='logo-trybewarts'>
+    </section>
+
+  </main>
+  
+  <script src='/script.js'></script>
+</body>
+
+<footer>
+  <p>Direitos reservados à Trybewarts©.</p>
+</footer>
+</html>
